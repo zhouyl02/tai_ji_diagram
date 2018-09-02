@@ -9,6 +9,9 @@
     border-width: 2px 2px 50px 2px; 
     border-radius: 100%; 
     position: relative; 
+    animation:rotation 2.5s linear infinite;
+    -webkit-animation:rotation 2.5s linear infinite;
+    -moz-animation:rotation 2.5s linear infinite;
     } 
     #yin-yang:before { 
     content: ""; 
@@ -32,6 +35,7 @@
     width: 12px; 
     height: 12px; 
     }
+
     @keyframes rotation {
         0% {transform:rotate(0deg);}
         100% {transform:rotate(-360deg);}
@@ -44,3 +48,4 @@
         0% {-moz-transform:rotate(0deg);}
         100% {-moz-transform:rotate(-360deg);}
     }
+    
